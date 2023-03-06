@@ -35,7 +35,7 @@ def compute_height(n, parents):
 
 def main():
    
-    source = input("Enter 'I' or 'F': ")
+    source = input()
 
     if source.upper() == "I":
 
@@ -50,7 +50,7 @@ def main():
                 if "a" in filename:
                     print("Invalid file name")
                 else:
-                    with open("data/" + filename, "r") as f:
+                    with open("test/" + filename, "r") as f:
                         n = int(f.readline().strip())
                         parents = list(map(int, f.readline().strip().split()))
                     break
