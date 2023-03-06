@@ -35,7 +35,7 @@ def compute_height(n, parents):
 
 def main():
    
-    source = input("Enter 'I' or 'F': ")
+    source = input()
 
     if source.upper() == "I":
 
